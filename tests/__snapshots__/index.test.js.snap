@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DescendantProvider and useDescendant should provide and use the descendant context 1`] = `
+<body>
+  <div>
+    <div>
+      Menu Item at index: 
+      0
+    </div>
+    <div>
+      Menu Item at index: 
+      1
+    </div>
+    <p>
+      Another item
+    </p>
+    <div>
+      Menu Item at index: 
+      2
+    </div>
+  </div>
+</body>
+`;

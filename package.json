@@ -1,0 +1,57 @@
+{
+  "name": "@react-lit/descendants",
+  "version": "0.1.0",
+  "author": "Joel Voss <mail@joelvoss.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joelvoss/react-lit-descendants.git"
+  },
+  "type": "module",
+  "source": "src/index.js",
+  "main": "dist/react-lit-descendants.cjs",
+  "module": "dist/react-lit-descendants.module.js",
+  "exports": {
+    "require": "./dist/react-lit-descendants.cjs",
+    "import": "./dist/react-lit-descendants.modern.js"
+  },
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "LICENSE"
+  ],
+  "scripts": {
+    "test": "./Taskfile.sh test",
+    "prepublishOnly": "./Taskfile.sh build"
+  },
+  "dependencies": {
+    "@react-lit/helper": "^0.2.0"
+  },
+  "devDependencies": {
+    "@jvdx/core": "^2.7.0",
+    "@testing-library/react": "^12.1.2",
+    "@testing-library/user-event": "^13.5.0",
+    "parcel": "^2.0.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "peerDependencies": {
+    "react": "17.x",
+    "react-dom": "17.x"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "prettier": "@jvdx/prettier-config",
+  "prettierIgnore": [
+    "tests/",
+    "dist/"
+  ],
+  "eslintConfig": {
+    "extends": "@jvdx/eslint-config"
+  },
+  "eslintIgnore": [
+    "tests/",
+    "dist/"
+  ]
+}

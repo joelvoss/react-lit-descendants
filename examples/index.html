@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>Examples</title>
+	</head>
+	<body>
+		<div id="root"></div>
+		<script type="module">
+			import ReactDOM from 'react-dom';
+			import pkg from '../package.json';
+
+			const examples = ['add-and-remove', 'sorting'];
+
+			function App() {
+				return (
+					<>
+						<h1>
+							{pkg.name} <small>v{pkg.version}</small>
+						</h1>
+						<h2>Examples</h2>
+						<ul>
+							{examples.map(c => (
+								<li key={c}>
+									<a href={`/${c}`}>{c}</a>
+								</li>
+							))}
+						</ul>
+					</>
+				);
+			}
+
+			const root = document.getElementById('root');
+			ReactDOM.render(<App />, root);
+		</script>
+	</body>
+</html>
