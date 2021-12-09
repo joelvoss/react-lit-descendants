@@ -25,10 +25,10 @@
     "prepublishOnly": "./Taskfile.sh build"
   },
   "dependencies": {
-    "@react-lit/helper": "^0.4.0"
+    "@react-lit/helper": "^0.4.1"
   },
   "devDependencies": {
-    "@jvdx/core": "^2.9.1",
+    "@jvdx/core": "^2.9.2",
     "@testing-library/react": "^12.1.2",
     "@testing-library/user-event": "^13.5.0",
     "parcel": "^2.0.1",
