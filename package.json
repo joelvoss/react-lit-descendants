@@ -25,19 +25,19 @@
     "prepublishOnly": "./Taskfile.sh build"
   },
   "dependencies": {
-    "@react-lit/helper": "^0.4.1"
+    "@react-lit/helper": "^0.5.0"
   },
   "devDependencies": {
-    "@jvdx/core": "^2.9.2",
+    "@jvdx/core": "^2.9.3",
     "@testing-library/react": "^12.1.2",
     "@testing-library/user-event": "^13.5.0",
-    "parcel": "^2.0.1",
+    "parcel": "^2.2.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2"
   },
   "peerDependencies": {
-    "react": "17.x",
-    "react-dom": "17.x"
+    "react": ">= 17",
+    "react-dom": ">= 17"
   },
   "publishConfig": {
     "access": "public"
