@@ -1,3 +1,12 @@
 {
-	"presets": ["@jvdx/babel-preset"]
+	"presets": [
+		[
+			"@jvdx/babel-preset",
+			{
+				"preset-react": {
+					"runtime": "classic"
+				}
+			}
+		]
+	]
 }
