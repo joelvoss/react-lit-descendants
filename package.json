@@ -25,7 +25,7 @@
     "prepublishOnly": "./Taskfile.sh build"
   },
   "dependencies": {
-    "@react-lit/helper": "^0.5.0"
+    "@react-lit/helper": "^0.6.0"
   },
   "devDependencies": {
     "@jvdx/core": "^2.10.0",
