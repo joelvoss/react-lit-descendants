@@ -114,7 +114,7 @@ describe('DescendantProvider and useDescendant', () => {
 		expect(baseElement).toMatchSnapshot();
 	});
 
-	it('should index correctly when items change', () => {
+	it('should index correctly when items change', async () => {
 		const DescendantContext = createDescendantContext('DescendantContext');
 
 		function Menu({ children }) {
@@ -183,7 +183,7 @@ describe('DescendantProvider and useDescendant', () => {
 		);
 
 		const btn = getByRole('button');
-		userEvent.click(btn);
+		await userEvent.click(btn);
 
 		expect(menu.innerHTML).toBe(
 			'<div label="first">Menu Item at index: 0</div><div label="third">Menu Item at index: 1</div>',

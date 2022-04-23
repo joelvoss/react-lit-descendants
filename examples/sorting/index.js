@@ -1,5 +1,5 @@
+import * as React from 'react';
 import { useStatefulRefValue, isFunction } from '@react-lit/helper';
-import { useMemo, useRef, useState } from 'react';
 import {
 	createDescendantContext,
 	DescendantProvider,
@@ -8,7 +8,7 @@ import {
 } from '../../src/index';
 
 export function Example() {
-	let [items, setItems] = useState([0, 1, 2, 3, 4, 5]);
+	let [items, setItems] = React.useState([0, 1, 2, 3, 4, 5]);
 
 	return (
 		<>
@@ -72,9 +72,9 @@ const ListProvider = ({ children }) => {
 ////////////////////////////////////////////////////////////////////////////////
 
 const ListItem = ({ children, index: indexProp, ...rest }) => {
-	let ref = useRef(null);
+	let ref = React.useRef(null);
 	let [element, handleRefSet] = useStatefulRefValue(ref, null);
-	let descendant = useMemo(() => ({ element }), [element]);
+	let descendant = React.useMemo(() => ({ element }), [element]);
 	let index = useDescendant(descendant, DescendantContext, indexProp);
 
 	return (
